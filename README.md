@@ -1,5 +1,5 @@
 # parks
-helps you choose a nearby park to visit
+helps you choose a nearby park to visit <br />
 practicing creating GUIs with Python
 
 # how to use
