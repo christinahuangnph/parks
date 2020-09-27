@@ -1,4 +1,4 @@
-# Choose a random state park to visit
+# Choose a random park to visit
 # 9-26-2020
 
 import random, tkinter
@@ -16,13 +16,13 @@ FILE_LENGTH = 30
 
 
 ######################## Set up GUI #############################
-# Window Setup
+# window setup
 window = Tk()
 window.title("Parks")
 frame_a = ttk.Frame(window, padding="100 100 100 100")
 frame_a.pack()
 
-#set up text boxes
+# set up text boxes
 firstLabel = StringVar()
 ttk.Label(frame_a, textvariable=firstLabel).grid(column=4, row=4, sticky=(W, E))
 firstLabel.set('Choose a park by number')
@@ -30,7 +30,7 @@ inputBox = ttk.Entry(frame_a, width = 30, textvariable = StringVar())
 inputBox.grid(column=6, row=4, sticky=W)
 inputBox.insert(END, '')
 
-#set up button
+# set up button
 enterButton = ttk.Button(frame_a, text = "Pick a park", width = 15, command = lambda: pickAPark() )
 enterButton.grid(column=6, row=50, sticky=W)
 ###############################################################
@@ -62,11 +62,13 @@ def displ(parkName):
 ###############################################################
 
 ####################### Future Work ###########################
-# Future work
-# Implement closer and farther buttons
-# Improve aesthetics
-# Insert photos
-# Make the distances the value in the key-value pair
+# implement "closer" and "farther" buttons so the user can narrow the search
+# improve aesthetics
+# insert photos
+# make the distances the value in the key-value pair
+# implement "list" feature to list all the possible parks
+# scrape nearby parks from online
+# integrate with Google Maps API?
 
 ###############################################################
 
