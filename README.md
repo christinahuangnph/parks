@@ -8,6 +8,7 @@ practicing creating GUIs with Python
 
 # future work
 - implement "closer" and "farther" buttons so the user can narrow the search
+- implement no repeats per session
 - improve aesthetics
 - insert photos
 - make the distances the value in the key-value pair
